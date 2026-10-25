@@ -65,6 +65,3 @@ python subdomain_enum.py --help
 - Some subdomains may not appear in the results.
 - The tool does not verify whether discovered subdomains are currently active.
 
-## Disclaimer
-
-This tool is intended for authorized security testing and educational purposes. Only assess domains you own or have explicit permission to test.
