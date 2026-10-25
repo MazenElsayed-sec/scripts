@@ -57,10 +57,3 @@ The tool prints the HTTP status code and URL for each successful HTTP response, 
 - HTTP status codes do not always establish whether a path exists.
 - Redirects and application-specific responses may affect results.
 
-## Responsible Use
-
-Use this tool only on systems you own or have explicit permission to test. Keep request volumes within the target's permitted limits.
-
-## License
-
-Choose and add an appropriate license before distributing this project.
