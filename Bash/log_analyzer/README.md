@@ -72,7 +72,6 @@ The analysis report will be saved to `results.txt`.
 
 ## Example Log File
 
-Create a sample log file for testing:
 
 ```text
 Oct 28 10:01:12 server sshd: Failed password for root from 192.168.1.10 port 2222 ssh2
@@ -119,7 +118,6 @@ Failed Login Events: 3
       1 192.168.1.30
 ```
 
-The line numbers shown above are provided by `grep -n`. The exact report date and time will depend on when the script is executed.
 
 ## Error Handling
 
