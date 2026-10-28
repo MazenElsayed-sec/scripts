@@ -26,7 +26,7 @@ show_help() {
     echo "Options:"
     echo "  -f <file>   Read hosts from a file"
     echo "  -o <file>   Save results to a file"
-    echo "  -h          Display this help message"
+    echo "  -h          Display help"
     echo
     echo "Examples:"
     echo "  $0 192.168.1.1"
@@ -130,19 +130,29 @@ log "Timeout: ${TIMEOUT}s"
 log "--------------------------------"
 
 for host in "${HOSTS[@]}"; do
-    if [[ "$host" =~ [[:space:]] ]]; then
+    if [[ -z "$host" || "$host" =~ [[:space:]] ]]; then
         log "[ERROR] Invalid host entry: $host"
         ((ERRORS+=1))
         continue
     fi
 
-    if ping -n -c "$COUNT" -W "$TIMEOUT" "$host" >/dev/null 2>&1; then
-        log "[+] $host : ALIVE"
-        ((ALIVE+=1))
-    else
-        log "[-] $host : NO RESPONSE"
-        ((NO_RESPONSE+=1))
-    fi
+    ping -n -c "$COUNT" -W "$TIMEOUT" "$host" >/dev/null 2>&1
+    ping_status=$?
+
+    case "$ping_status" in
+        0)
+            log "[+] $host : ALIVE"
+            ((ALIVE+=1))
+            ;;
+        1)
+            log "[-] $host : NO RESPONSE"
+            ((NO_RESPONSE+=1))
+            ;;
+        *)
+            log "[ERROR] $host : PING FAILED (exit code: $ping_status)"
+            ((ERRORS+=1))
+            ;;
+    esac
 done
 
 log "--------------------------------"
