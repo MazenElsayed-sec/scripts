@@ -80,7 +80,6 @@ Create a file named `hosts.txt`:
 192.168.1.10
 192.168.1.20
 example.com
-# This is a comment
 ```
 
 Run the tool:
@@ -129,7 +128,6 @@ Errors: 0
 ================================
 ```
 
-*The output above is an example. Actual results depend on network conditions and host configuration.*
 
 ## Status Definitions
 
