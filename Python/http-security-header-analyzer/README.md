@@ -24,7 +24,7 @@ A simple Python tool that analyzes HTTP security headers for a specified URL and
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/http-security-header-analyzer.git
+git clone https://github.com/MazenElsayed-sec/http-security-header-analyzer.git
 ```
 
 **2. Navigate to the project directory**
