@@ -21,19 +21,9 @@ A lightweight Bash script for checking whether hosts respond to ICMP ping reques
 
 ## Installation
 
-Clone the repository:
+**1. Download the `host_discovery.sh` file.**
 
-```bash
-git clone <repository-url>
-```
-
-Navigate to the project directory:
-
-```bash
-cd <repository-directory>
-```
-
-Make the script executable:
+**2. Make the script executable:**
 
 ```bash
 chmod +x host_discovery.sh
