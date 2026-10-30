@@ -44,7 +44,7 @@ python -m pip install -r requirements.txt
 Run the script using:
 
 ```bash
-python http_security_header_analyzer.py
+python http-security-header-analyzer.py
 ```
 
 Enter the target URL when prompted.
