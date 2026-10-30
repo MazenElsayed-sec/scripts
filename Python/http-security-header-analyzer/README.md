@@ -21,22 +21,10 @@ A simple Python tool that analyzes HTTP security headers for a specified URL and
 
 ## Installation
 
-**1. Clone the repository**
+Download `http-security-header-analyzer.py` to your local machine, then install the required dependency:
 
 ```bash
-git clone https://github.com/MazenElsayed-sec/http-security-header-analyzer.git
-```
-
-**2. Navigate to the project directory**
-
-```bash
-cd http-security-header-analyzer
-```
-
-**3. Install the required dependencies**
-
-```bash
-python -m pip install -r requirements.txt
+python -m pip install requests
 ```
 
 ## Usage
