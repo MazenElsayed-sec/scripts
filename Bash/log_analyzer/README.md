@@ -26,19 +26,9 @@ A simple Bash-based cybersecurity tool that analyzes Linux log files to identify
 
 ## Installation
 
-Clone the repository:
+**1. Download the `log_analyzer.sh` file.**
 
-```bash
-git clone <YOUR_REPOSITORY_URL>
-```
-
-Navigate to the project directory:
-
-```bash
-cd <YOUR_PROJECT_DIRECTORY>
-```
-
-Make the script executable:
+**2. Make the script executable:**
 
 ```bash
 chmod +x log_analyzer.sh
