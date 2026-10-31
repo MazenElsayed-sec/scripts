@@ -88,13 +88,13 @@ git clone https://github.com/MazenElsayed-sec/scripts.git
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd scripts/Python/url-risk-scorer
+cd "scripts/Python/URL Risk Scorer"
 ```
 
 ### 3. Install Dependencies
 
 ```bash
-py -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ## Usage
@@ -128,7 +128,7 @@ The tool analyzes all non-empty lines in the input file.
 From the project directory, execute:
 
 ```bash
-py url_risk_scorer.py
+python url_risk_scorer.py
 ```
 
 ### 3. View the Results
